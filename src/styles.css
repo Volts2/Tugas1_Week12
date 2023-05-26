@@ -1,0 +1,140 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+$paper-color: #f1ede9;
+$paper-line: #94acd4;
+
+.notepad {
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 10px 10px 40px rgba(blue, 0.15);
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+
+.paper {
+  width: auto;
+  height: auto;
+  padding: 0vh 2vh 1vh 0vh;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 32px;
+  font-size: 22px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 235, 168);
+  margin: 0;
+  color: black;
+}
+
+.input {
+  background-color: rgb(112, 185, 185);
+  width: auto;
+  height: 20px;
+  padding: 25px;
+  margin-top: -25px;
+  color: white;
+  text-align: flex;
+}
+
+.input:focus {
+  color: black;
+  background-color: white;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: 0.1s;
+  color: rgb(100, 170, 167);
+  transition-property: box-shadow;
+}
+
+.container {
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  background-color: greenyellow;
+}
+
+.header {
+  width: 100%;
+  height: 40px;
+  background: #333;
+  border-radius: 5px 5px 0 0;
+  text-align: middle;
+  color: white;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-shadow: 1px 1px 3px white;
+}
+
+.texts {
+  background: rgb(255, 255, 255, 0.2);
+  border-color: white;
+  color: black;
+  text-align: center;
+  border-width: 1.5px;
+  border-radius: 5px;
+  height: 10px;
+}
+
+::placeholder {
+  color: grey;
+  text-align: center;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: all 0.5s ease;
+  margin-left: 5px;
+  margin-right: 8px;
+  color: rgb(100, 170, 167);
+}
+
+button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.simple-animation {
+  animation: simpleFade 4s infinite;
+}
+
+@keyframes simpleFade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
